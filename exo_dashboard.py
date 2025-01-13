@@ -117,7 +117,7 @@ def main():
 
     if "Custom Scatter Plots" in viz_options:
         st.write("### Custom Scatter Plot")
-        st.write("If you don't understand the terms like pl_bmasse, pl_rade, etc., please refer to the [explanation_of_terms_in_nasaarchiveexopl.md](https://github.com/Shivaji-137/Exoplanet-Data-Dashboard/blob/main/explanation_of_termsin_nasaarchiveexopl.md)")
+        st.write("If you don't understand the terms like pl_bmasse, pl_rade, etc., please refer to the [terms explanation](https://github.com/Shivaji-137/Exoplanet-Data-Dashboard/blob/main/explanation_of_termsin_nasaarchiveexopl.md)")
         x_axis = st.selectbox("X-axis:", data.columns, index=data.columns.get_loc('pl_bmasse'))
         y_axis = st.selectbox("Y-axis:", data.columns, index=data.columns.get_loc('pl_rade'))
         color = st.selectbox("Color By:", data.columns, index=data.columns.get_loc('discoverymethod'))
