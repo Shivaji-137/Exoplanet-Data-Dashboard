@@ -32,3 +32,6 @@ This project is an interactive dashboard for exploring various properties of exo
 ## Usage
 
 To run the dashboard, execute the following command:
+```bash
+streamlit run exo_dashboard.py
+```
