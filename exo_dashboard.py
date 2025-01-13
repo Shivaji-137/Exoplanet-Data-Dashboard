@@ -117,6 +117,7 @@ def main():
 
     if "Custom Scatter Plots" in viz_options:
         st.write("### Custom Scatter Plot")
+        st.write("If you don't understand the terms like pl_bmasse, pl_rade, etc., please refer to the [explanation_of_terms_in_nasaarchiveexopl.md](https://github.com/Shivaji-137/Exoplanet-Data-Dashboard/blob/main/explanation_of_termsin_nasaarchiveexopl.md)")
         x_axis = st.selectbox("X-axis:", data.columns, index=data.columns.get_loc('pl_bmasse'))
         y_axis = st.selectbox("Y-axis:", data.columns, index=data.columns.get_loc('pl_rade'))
         color = st.selectbox("Color By:", data.columns, index=data.columns.get_loc('discoverymethod'))
@@ -129,8 +130,7 @@ def main():
     st.markdown("---")
     st.markdown("Data Source: [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/)")
     st.markdown("Created using [Astroquery](https://astroquery.readthedocs.io/) and [Streamlit](https://streamlit.io/)")
-    st.markdown("Author: [Shivaji Chaulagain](https://github.com/Shivaji-137)")
-
+    st.markdown('<p style="text-align: center;">Copyright © 2025 Shivaji Chaulagain</p>', unsafe_allow_html=True)
 # Run the app
 if __name__ == "__main__":
     main()
