@@ -2,6 +2,7 @@
 
 This project is an interactive dashboard for exploring various properties of exoplanets and their host stars. The dashboard is built using Streamlit, Plotly, and Astroquery to fetch and visualize data from the NASA Exoplanet Archive.
 
+Open this link for dashboard: https://shivaji-exoplanet-dashboard.streamlit.app/
 ## Features
 
 - **Data Retrieval**: Fetches exoplanet data from the NASA Exoplanet Archive using Astroquery.
